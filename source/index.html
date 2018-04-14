@@ -16,7 +16,7 @@
             <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
           </ul>
-          <ul class="main-nav__user-list user-list">
+          <ul class="main-nav__list user-list">
             <li class="user-list__item user-list__item--search"><a href="#">Поиск по сайту</a></li>
             <li class="user-list__item user-list__item--basket"><a href="#">Корзина: пока пуста</a></li>
           </ul>
@@ -31,10 +31,10 @@
           <h2 class="visually-hidden">Наш товар</h2>
           <p class="product__description">Милые штуки ручной работы для дома</p>
         </header>
-        <section class="product__types">
+        <section class="product-types">
           <h2 class="visually-hidden">Товары:</h2>
-          <a class="product__types--interior" href="#">Предметы интерьера</a>
-          <a class="product__types--toys" href="#">Детские игрушки</a>
+          <a class="product-types__interior" href="#">Предметы интерьера</a>
+          <a class="product-types__toys" href="#">Детские игрушки</a>
         </section>
       </section>
 
@@ -44,16 +44,16 @@
         <p class="product-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="product-card__table">
           <tr>
-            <td class="product-card__table__color">Цвет:</td>
-            <td class="product-card__table__type-color">«Тиффани»/серый</td>
+            <td class="product-card__table-element">Цвет:</td>
+            <td class="product-card__table-element">«Тиффани»/серый</td>
           </tr>
           <tr>
-            <td class="product-card__table__diameter">Диаметр:</td>
-            <td class="product-card__table__size">25 см</td>
+            <td class="product-card__table-element">Диаметр:</td>
+            <td class="product-card__table-element">25 см</td>
           </tr>
           <tr>
-            <td class="product-card__table__height">Высота:</td>
-            <td class="product-card__table__size">15 см</td>
+            <td class="product-card__table-element">Высота:</td>
+            <td class="product-card__table-element">15 см</td>
           </tr>
         </table>
         <img class="product-card__image" src="#" width="1" height="1" alt="Фото товара">
@@ -76,15 +76,15 @@
       <section class="comments">
         <h2 class="comments__title">Отзывы:</h2>
         <blockquote class="comments__review">
-          <p class="comments__review--item">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="comments__review--name">Анастасия Красильникова</cite>
-          <a class="comments__review--link" href="#">@misssssiskras</a>
+          <p class="comments__item">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="comments__name">Анастасия Красильникова</cite>
+          <a class="comments__link" href="#">@misssssiskras</a>
         </blockquote>
         <div class="comments__controls">
-          <a class="comments__controls__button comments__controls__button--back" href="#">Назад</a>
-          <a class="comments__controls__button comments__controls__button--forward" href="#">Вперед</a>
+          <a class="comments__button comments__button--back" href="#">Назад</a>
+          <a class="comments__button comments__button--forward" href="#">Вперед</a>
         </div>
-        <a class="button comments__button" href="#">Написать</a>
+        <a class="button comments__button-link" href="#">Написать</a>
       </section>
 
       <section class="contacts">
@@ -92,18 +92,18 @@
         <p class="contacts__mail">e-mail:</p>
         <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
         <p class="contacts__address">адрес:</p>
-        <p class="contacts__exact--address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        <p class="contacts__address-exact">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
         <div class="contats__map">
-          <img class="contacts__map--address" src="#" width="1" height="1" alt="Наше местоположение">
+          <img class="contacts__map-address" src="#" width="1" height="1" alt="Наше местоположение">
         </div>
-        <a class="button contacts__button" href="#">Напишите нам</a>
+        <a class="button contacts__button-link" href="#">Напишите нам</a>
       </section>
 
       <footer class="page-footer">
-        <ul class="page-footer__socilal-list">
-          <li class="page-footer__list-item page-footer__list-item--instagram"><a href="#">Instagram</a></li>
-          <li class="page-footer__list-item page-footer__list-item--facebook"><a href="#">Facebook</a></li>
-          <li class="page-footer__list-item page-footer__list-item--twitter"><a href="#">Twitter</a></li>
+        <ul class="social-list">
+          <li class="social-list__list-item social-list__list-item--instagram"><a href="#">Instagram</a></li>
+          <li class="social-list__list-item social-list__list-item--facebook"><a href="#">Facebook</a></li>
+          <li class="social-list__list-item social-list__list-item--twitter"><a href="#">Twitter</a></li>
         </ul>
         <p class="page-footer__total">Разработано</p>
         <a class="page-footer__link-developer" href="#">HTML academy</a>
