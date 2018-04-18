@@ -19,6 +19,7 @@
 
 .page-form__legend {
   padding-bottom: 31px;
+
   @include legend-style;
 }
 
@@ -75,5 +76,6 @@
   margin-bottom: 55px;
   background-color: $main-backgroundcolor;
   cursor: pointer;
+
   @include button;
 }

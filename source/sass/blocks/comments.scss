@@ -5,6 +5,7 @@
 
 .comments__title {
   margin: 0;
+
   @include heading;
 }
 
@@ -43,5 +44,6 @@
   margin-top: 37px;
   padding-left: 78px;
   padding-right: 78px;
+
   @include button;
 }

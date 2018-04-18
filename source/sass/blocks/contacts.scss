@@ -12,22 +12,26 @@
 .contacts__mail {
   margin: 0;
   margin-top: 37px;
+
   @include contacts;
 }
 
 .contacts__link {
   text-decoration: none;
+
   @include contacts;
 }
 
 .contacts__address {
   margin: 0;
+
   @include contacts;
 }
 
 .contacts__address-exact {
   margin: 0;
   margin-bottom: 72px;
+
   @include contacts;
 }
 
@@ -42,5 +46,6 @@
   margin-bottom: 37px;
   padding-left: 48px;
   padding-right: 48px;
+
   @include button;
 }

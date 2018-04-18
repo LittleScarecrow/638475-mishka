@@ -10,6 +10,7 @@
 
 .product-card__title {
   padding-top: 30px;
+
   @include heading;
 }
 
@@ -60,5 +61,6 @@
   margin-top: 27px;
   padding-left: 83px;
   padding-right: 83px;
+
   @include button;
 }
