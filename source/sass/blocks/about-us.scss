@@ -1,0 +1,23 @@
+.about-us {
+  margin-top: 73px;
+  margin-left: 30px;
+}
+
+.about-us__title {
+  margin: 0;
+  @include heading;
+}
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-us__list-items {
+  padding-top: 85px;
+  font-size: 17px;
+  line-height: 20px;
+  color: $main-color;
+  font-weight: 700;
+}

@@ -1,0 +1,19 @@
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+}
+
+.site-list__item,
+.user-list__item {
+  padding-top: 29px;
+  padding-bottom: 29px;
+  padding-left: 75px;
+  list-style: none;
+  border-top: 1px solid $border-color;
+}
+
+.site-list__item-link,
+.user-list__item-link {
+  text-decoration: none;
+  color: $main-color;
+}
