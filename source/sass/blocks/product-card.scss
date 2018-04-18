@@ -58,5 +58,7 @@
 
 .product-card__order-button {
   margin-top: 27px;
+  padding-left: 83px;
+  padding-right: 83px;
   @include button;
 }

@@ -1,0 +1,72 @@
+@mixin button {
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid $light-black;
+  color: $light-black;
+}
+
+@mixin heading {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+@mixin contacts {
+  font-size: 15px;
+  line-height: 30px;
+  color: $light-black;
+}
+
+@mixin catalog-items-heading {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $main-color;
+}
+
+@mixin catalog-description-heading {
+  margin: 0;
+  padding-bottom: 25px;
+  font-size: 13px;
+  line-height: 30px;
+  color: $light-black;
+  border-bottom: 1px solid $border-color;
+}
+
+@mixin catalog-price {
+  margin: 0;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $main-color;
+}
+
+@mixin catalog-form-heading {
+  margin: 0;
+  padding-top: 73px;
+  padding-bottom: 73px;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $main-color;
+  background-color: #f1f1f1;
+}
+
+@mixin legend-style {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63d1bb;
+}

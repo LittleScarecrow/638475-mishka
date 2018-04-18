@@ -1,0 +1,81 @@
+.page-form__title {
+  @include catalog-form-heading;
+}
+
+.page-form__description {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 51px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $light-black;
+}
+
+.page-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.page-form__legend {
+  padding-bottom: 31px;
+  @include legend-style;
+}
+
+.page-form__label-radio,
+.page-form__label-checkbox,
+.page-form__label-text {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $main-color;
+}
+
+.page-form__radio {
+  padding-bottom: 21px;
+}
+
+.page-form__fieldset--kind {
+  padding-bottom: 20px;
+}
+
+.page-form__checkbox {
+  padding-bottom: 40px;
+}
+
+.page-form__input-text,
+.page-form__input-tel-mail {
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid $main-color;
+}
+
+.page-form__fieldset--tel,
+.page-form__fieldset--email,
+.page-form__fieldset--additional {
+  margin-top: 31px;
+}
+
+.page-form__textarea {
+  border: 2px solid $light-black;
+}
+
+.page-form__recommendation {
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $light-black;
+}
+
+.page-form__button {
+  padding-left: 44px;
+  padding-right: 44px;
+  margin-bottom: 55px;
+  background-color: $main-backgroundcolor;
+  cursor: pointer;
+  @include button;
+}
+
+

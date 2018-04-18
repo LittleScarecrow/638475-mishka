@@ -1,9 +1,23 @@
 .catalog__main-title {
-  margin: 0;
-  padding-top: 72px;
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: 700;
-  color: $main-color;
-  background-color: blue;
+  @include catalog-form-heading;
+}
+
+.catalog-items {
+  margin-top: 30px;
+}
+
+.catalog-items__title {
+  @include catalog-items-heading;
+}
+
+.catalog-items__description {
+  @include catalog-description-heading;
+}
+
+.catalog-items__price {
+  @include catalog-price;
+}
+
+.catalog-items__wrapper {
+  border: 1px solid #ededed;
 }
