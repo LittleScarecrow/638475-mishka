@@ -3,22 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo" src="#" width="1" height="1" alt="Лого: Мишка">
+        <img class="page-header__logo" src="img/logo-mobile.svg" width="86px" height="35px" alt="Лого: Мишка">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toogle" type="button">Открыть меню</button>
+        <button class="main-nav__toogle" type="button">Открыть меню/Закрыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active""><a>Каталог товаров</a></li>
-            <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="form.html">Вязание на заказ</a></li>
           </ul>
           <ul class="main-nav__list user-list">
-            <li class="user-list__item user-list__item--search"><a href="#">Поиск по сайту</a></li>
-            <li class="user-list__item user-list__item--basket"><a href="#">Корзина: пока пуста</a></li>
+            <li class="user-list__item user-list__item--search"><a class="user-list__item-link" href="#">Поиск по сайту</a></li>
+            <li class="user-list__item user-list__item--basket"><a class="user-list__item-link" href="#">Корзина: пока пуста</a></li>
           </ul>
         </div>
       </nav>
@@ -28,28 +30,34 @@
       <section class="catalog">
         <h2 class="catalog__main-title">Каталог товаров</h2>
           <div class="catalog-items">
-            <img class="catalog-items__image" src="#" width="1" height="1" alt="Заяц">
-            <p class="catalog-items__title">Зайчик-попрыгайчик</p>
-            <p class="catalog-items__description">Рост 30 см, вес 200 г</p>
-            <p class="catalog-items__price">1 200 руб.</p>
+            <img class="catalog-items__image" src="img/photo-hare-mobile@1x.jpg" width="260px" height="195px" alt="Заяц">
+            <div class="catalog-items__wrapper">
+              <p class="catalog-items__title">Зайчик-попрыгайчик</p>
+              <p class="catalog-items__description">Рост 30 см, вес 200 г</p>
+              <p class="catalog-items__price">1 200 руб.</p>
+            </div>
           </div>
           <div class="catalog-items">
-            <img class="catalog-items__image" src="#" width="1" height="1" alt="Корзина для белья">
-            <p class="catalog-items__title">Корзинка для белья</p>
-            <p class="catalog-items__description">Диаметр 15 см, высота 10 см</p>
-            <p class="catalog-items__price">690 руб.</p>
+            <img class="catalog-items__image" src="img/photo-bowl-mobile@1x.jpg" width="260px" height="195px" alt="Корзина для белья">
+            <div class="catalog-items__wrapper">
+              <p class="catalog-items__title">Корзинка для белья</p>
+              <p class="catalog-items__description">Диаметр 15 см, высота 10 см</p>
+              <p class="catalog-items__price">690 руб.</p>
+            </div>
           </div>
           <div class="catalog-items">
-            <img class="catalog-items__image" src="#" width="1" height="1" alt="Корзинка для игрушек">
-            <p class="catalog-items__title">Большая корзинка для игрушек</p>
-            <p class="catalog-items__description">Диаметр 30 см, высота 30 см</p>
-            <p class="catalog-items__price">1 500 руб.</p>
+            <img class="catalog-items__image" src="img/photo-toys-mobile@1x.jpg" width="260px" height="195px" alt="Корзинка для игрушек">
+            <div class="catalog-items__wrapper">
+              <p class="catalog-items__title">Большая корзинка для игрушек</p>
+              <p class="catalog-items__description">Диаметр 30 см, высота 30 см</p>
+              <p class="catalog-items__price">1 500 руб.</p>
+            </div>
           </div>
       </section>
 
       <section class="production">
         <h2 class="production__title">Процесс производства</h2>
-        <img class="production__video-about" src="#" width="1" height="1" alt="Процесс производства">
+        <img class="production__video-about" src="img/video-mobile@1x.jpg" width="260px" height="150px;" alt="Процесс производства">
         <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="button production__button" href="#">Сделать заказ</a>
       </section>
@@ -86,4 +94,3 @@
     </main>
   </body>
 </html>
-

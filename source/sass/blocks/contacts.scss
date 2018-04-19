@@ -1,0 +1,51 @@
+.contacts {
+  margin-top: 91px;
+}
+
+.contacts__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.contacts__mail {
+  margin: 0;
+  margin-top: 37px;
+
+  @include contacts;
+}
+
+.contacts__link {
+  text-decoration: none;
+
+  @include contacts;
+}
+
+.contacts__address {
+  margin: 0;
+
+  @include contacts;
+}
+
+.contacts__address-exact {
+  margin: 0;
+  margin-bottom: 72px;
+
+  @include contacts;
+}
+
+.contacts__title,
+.contacts__mail,
+.contacts__address {
+  margin-left: 30px;
+}
+
+.contacts__button-link {
+  margin-top: 37px;
+  margin-bottom: 37px;
+  padding-left: 48px;
+  padding-right: 48px;
+
+  @include button;
+}
