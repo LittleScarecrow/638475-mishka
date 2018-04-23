@@ -79,3 +79,68 @@
 
   @include button;
 }
+
+@media (min-width: 768px) {
+  .page-form__fieldset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__fieldset--color {
+    background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__fieldset--tel,
+  .page-form__fieldset--email {
+    background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__textarea {
+    width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__recommendation {
+    order: 1;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-form__checkbox-wrapper {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-form__fieldset--color {
+    background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-form__fieldset--tel,
+  .page-form__fieldset--email {
+    background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-form__textarea {
+    width: 700px;
+  }
+}

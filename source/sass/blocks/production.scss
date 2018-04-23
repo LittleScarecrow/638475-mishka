@@ -30,3 +30,55 @@
 
   @include button;
 }
+
+@media (min-width: 768px) {
+  .production {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .production__video-about {
+    order: -1;
+  }
+}
+
+@media (min-width: 1250px) {
+  .production__video-about {
+    order: 0;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 1250px) {
+  .production {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .production__title {
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 1250px) {
+  .production__description {
+    align-self: flex-end;
+    width: 250px;
+    margin-top: -150px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .production__button {
+    align-self: flex-end;
+  }
+}

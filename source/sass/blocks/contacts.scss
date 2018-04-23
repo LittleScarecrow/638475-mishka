@@ -49,3 +49,64 @@
 
   @include button;
 }
+
+@media (min-width: 768px) {
+  .contacts {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__mail,
+  .contacts__address,
+  .contacts__address-exact,
+  .contacts__button-link {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__email-wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__address-wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: 1250px) {
+  .contacts__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1250px) {
+  .contacts {
+    padding-left: 272px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .contacts__map {
+    align-self: flex-end;
+    margin-top: -85px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .contacts__button-link {
+    align-self: flex-start;
+    margin-top: -50px;
+  }
+}

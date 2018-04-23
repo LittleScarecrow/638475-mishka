@@ -1,10 +1,15 @@
 body {
-  width: 320px;
   margin: 0 auto;
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   background-color: $main-backgroundcolor;
   color: $main-color;
+}
+
+.main-container {
+  width: 320px;
+  margin: 0 auto;
+  border: 1px solid black;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -20,4 +25,20 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    width: 768px;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+}
+
+@media (min-width: 1250px) {
+  .main-container {
+    width: 1250px;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
 }

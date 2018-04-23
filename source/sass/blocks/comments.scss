@@ -47,3 +47,42 @@
 
   @include button;
 }
+
+@media (min-width: 768px) {
+  .comments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .comments__button-link {
+    order: 1;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .comments__review {
+    order: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .comments__controls {
+    order: 3;
+    margin-left: 500px;
+    margin-top: -25px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .comments {
+    padding-left: 272px;
+    padding-right: 100px;
+  }
+}

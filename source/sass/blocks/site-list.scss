@@ -10,3 +10,38 @@
   text-decoration: none;
   color: $main-color;
 }
+
+.site-list__item--hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .site-list__item {
+    padding: 0;
+    border: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    order: 1;
+    justify-content: space-between;
+    width: 334px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .site-list__item--hidden {
+    display: block;
+  }
+}
+
+@media (min-width: 1250px) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    order: -1;
+    width: 400px;
+  }
+}

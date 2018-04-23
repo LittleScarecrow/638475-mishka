@@ -3,3 +3,23 @@
   line-height: 24px;
   font-weight: 700;
 }
+
+.page-header__logo {
+  height: 80px;
+}
+
+.page-header__logo-link {
+  padding-left: 116px;
+}
+
+.page-header__wrapper-logo-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .page-header__logo-link {
+    padding: 0;
+  }
+}

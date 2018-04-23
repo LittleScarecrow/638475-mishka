@@ -17,3 +17,50 @@
 .catalog-items__wrapper {
   border: 1px solid #ededed;
 }
+
+.catalog-items__image {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .catalog-items {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog-items__image {
+    padding-left: 40px;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog-items__title,
+  .catalog-items__description,
+  .catalog-items__price {
+    padding-left: 27px;
+    padding-right: 106px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .catalog-items {
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .catalog-items__image {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  .catalog-items__title {
+    padding-right: 20px;
+  }
+}

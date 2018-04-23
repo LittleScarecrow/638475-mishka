@@ -22,3 +22,62 @@
   color: $main-color;
   font-weight: 700;
 }
+
+@media (min-width: 768px) {
+  .about-us {
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us__list-items {
+    width: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us__list-items--ball {
+    order: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us__list-items--price {
+    order: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us__list-items--rocket {
+    order: 3;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us__list-items--heart {
+    order: 4;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us__list-items--gift {
+    order: 5;
+  }
+}
+
+@media (min-width: 1250px) {
+  .about-us {
+    padding-left: 272px;
+    padding-right: 272px;
+  }
+}
