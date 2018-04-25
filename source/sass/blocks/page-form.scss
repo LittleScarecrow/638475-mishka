@@ -1,4 +1,8 @@
 .page-form__title {
+
+  padding-left: 36px;
+  padding-right: 36px;
+
   @include catalog-form-heading;
 }
 
@@ -6,6 +10,8 @@
   margin: 0;
   padding-top: 27px;
   padding-bottom: 51px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 13px;
   line-height: 24px;
   color: $light-black;
@@ -38,6 +44,8 @@
 
 .page-form__fieldset--kind {
   padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .page-form__checkbox {
@@ -51,6 +59,24 @@
   border-bottom: 2px solid $main-color;
 }
 
+.page-form__fieldset--color {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page-form__fieldset--name,
+.page-form__fieldset--email,
+.page-form__fieldset--tel,
+.page-form__fieldset--additional {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page-form__input-text,
+.page-form__input-tel-mail {
+  width: 260px;
+}
+
 .page-form__fieldset--tel,
 .page-form__fieldset--email,
 .page-form__fieldset--additional {
@@ -58,6 +84,7 @@
 }
 
 .page-form__textarea {
+  width: 253px;
   border: 2px solid $light-black;
 }
 
@@ -78,6 +105,15 @@
   cursor: pointer;
 
   @include button;
+}
+
+@media (min-width: 768px) {
+  .page-form__title {
+    padding-left: 188px;
+    padding-right: 187px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 @media (min-width: 768px) {
