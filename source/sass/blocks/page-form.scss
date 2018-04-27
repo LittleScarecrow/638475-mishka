@@ -1,5 +1,4 @@
 .page-form__title {
-
   padding-left: 36px;
   padding-right: 36px;
 
@@ -8,8 +7,8 @@
 
 .page-form__description {
   margin: 0;
-  padding-top: 27px;
-  padding-bottom: 51px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   padding-left: 30px;
   padding-right: 30px;
   font-size: 13px;
@@ -29,6 +28,10 @@
   @include legend-style;
 }
 
+.page-form__radio-wrapper {
+  padding-left: 65px;
+}
+
 .page-form__label-radio,
 .page-form__label-checkbox,
 .page-form__label-text {
@@ -44,7 +47,7 @@
 
 .page-form__fieldset--kind {
   padding-bottom: 20px;
-  padding-left: 30px;
+  padding-left: 27px;
   padding-right: 30px;
 }
 
@@ -54,6 +57,7 @@
 
 .page-form__input-text,
 .page-form__input-tel-mail {
+  width: 260px;
   padding-bottom: 15px;
   border: none;
   border-bottom: 2px solid $main-color;
@@ -70,11 +74,6 @@
 .page-form__fieldset--additional {
   padding-left: 30px;
   padding-right: 30px;
-}
-
-.page-form__input-text,
-.page-form__input-tel-mail {
-  width: 260px;
 }
 
 .page-form__fieldset--tel,
@@ -117,9 +116,21 @@
 }
 
 @media (min-width: 768px) {
+  .page-form__description {
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 78px;
+    padding-bottom: 78px;
+  }
+}
+
+@media (min-width: 768px) {
   .page-form__fieldset-wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 11px;
   }
 }
 
@@ -132,8 +143,39 @@
 }
 
 @media (min-width: 768px) {
+  .page-form__fieldset--kind {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__label-radio {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__radio {
+    padding-left: 210px;
+    padding-bottom: 54px;
+  }
+}
+
+@media (min-width: 768px) {
   .page-form__fieldset--color {
+    padding-left: 50px;
+    padding-top: 66px;
     background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__label-checkbox {
+    font-size: 19px;
+    line-height: 18px;
   }
 }
 

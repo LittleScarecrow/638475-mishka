@@ -39,7 +39,6 @@ body {
 .main-container {
   width: 320px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -61,7 +60,6 @@ input[type="radio"].visually-hidden {
   .main-container {
     width: 768px;
     margin: 0 auto;
-    border: 1px solid black;
   }
 }
 

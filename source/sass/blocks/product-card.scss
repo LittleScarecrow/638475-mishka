@@ -1,5 +1,6 @@
 .product-card {
-  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 30px
 }
 
 .product-card__main-wrapper {
@@ -14,13 +15,13 @@
 }
 
 .product-card__title {
-  padding-top: 30px;
+  padding-top: 27px;
 
   @include heading;
 }
 
 .product-card__subtitle {
-  padding-top: 3px;
+  padding-top: 6px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -29,7 +30,7 @@
 }
 
 .product-card__description {
-  padding-top: 28px;
+  padding-top: 22px;
   font-size: 15px;
   line-height: 24px;
   color: $light-black;
@@ -37,13 +38,13 @@
 
 .product-card__table {
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .product-card__table-element {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 40px;
+  padding-right: 27px;
   border-bottom: 1px solid #ececec;
   font-size: 15px;
   line-height: 20px;
@@ -56,15 +57,16 @@
 
 .product-card__price {
   margin: 0;
-  margin-top: 27px;
+  padding-top: 19px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  text-align: center;
   color: $light-black;
 }
 
 .product-card__order-button {
-  margin-top: 27px;
+  margin-top: 26px;
   padding-left: 83px;
   padding-right: 83px;
 

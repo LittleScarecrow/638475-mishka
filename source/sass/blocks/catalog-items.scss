@@ -16,9 +16,14 @@
 
 .catalog-items__wrapper {
   border: 1px solid #ededed;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-left: 28px;
+  padding-right: 30px;
 }
 
 .catalog-items__image {
+  display: block;
   padding-left: 30px;
   padding-right: 30px;
 }
