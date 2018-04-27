@@ -4,6 +4,10 @@
   background-position: 50% -18px;
   min-height: 373px;
   border-top: 1px solid $border-color;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
 }
 
 .product__description {
@@ -24,5 +28,14 @@
     font-size: 15px;
     line-height: 24px;
     color: $light-black;
+  }
+}
+
+@media (min-width: 768px) {
+  .product {
+    margin-top: -67px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    min-height: 746px;
   }
 }

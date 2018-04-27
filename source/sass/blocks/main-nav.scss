@@ -63,7 +63,6 @@
   }
 }
 
-
 @media (min-width: 768px) {
   .main-nav__toogle {
     display: none;
@@ -84,8 +83,11 @@
   .main-nav__intro {
     display: block;
     margin: 0;
+    padding-top: 43px;
+    padding-left: 132px;
     font-size: 15px;
     line-height: 24px;
+    font-weight: 400;
     color: $light-black;
     order: 2;
   }

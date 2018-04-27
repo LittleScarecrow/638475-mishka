@@ -107,6 +107,8 @@
 
 @media (min-width: 768px) {
   .contacts__mail {
+    padding: 0;
+    padding-right: 23px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -117,7 +119,6 @@
     align-self: flex-start;
     font-size: 17px;
     line-height: 30px;
-    margin-left: 30px;
     padding-bottom: 4px;
     border-bottom: 1px solid #62d1ba;
   }
@@ -126,6 +127,7 @@
 @media (min-width: 768px) {
   .contacts__address-wrapper {
     display: flex;
+    padding-top: 26px;
   }
 }
 

@@ -1,14 +1,15 @@
 .site-list__item {
-  padding-top: 29px;
-  padding-bottom: 29px;
-  padding-left: 75px;
   list-style: none;
   border-top: 1px solid $border-color;
 }
 
 .site-list__item-link {
+  display: block;
   text-decoration: none;
   color: $main-color;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  padding-left: 75px;
 }
 
 .site-list__item--hidden {
@@ -18,7 +19,15 @@
 @media (min-width: 768px) {
   .site-list__item {
     padding: 0;
+    padding-top: 43px;
     border: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-list__item-link {
+    padding: 0;
+    font-size: 15px;
   }
 }
 
@@ -27,7 +36,7 @@
     display: flex;
     order: 1;
     justify-content: space-between;
-    width: 334px;
+    width: 287px;
   }
 }
 
