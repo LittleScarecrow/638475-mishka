@@ -4,6 +4,7 @@
 
 .contacts__title {
   margin: 0;
+  padding-left: 30px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -49,10 +50,6 @@
   margin: 0;
 
   @include contacts;
-}
-
-.contacts__title {
-  padding-left: 30px;
 }
 
 .contacts__button-link {
