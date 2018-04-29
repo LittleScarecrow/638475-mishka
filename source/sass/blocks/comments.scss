@@ -103,7 +103,7 @@
   .comments__controls {
     order: 3;
     padding: 0;
-    margin-left: 500px;
+    margin-left: 400px;
     margin-top: -45px;
   }
 }
@@ -128,7 +128,7 @@
 
 @media (min-width: 1250px) {
   .comments__button-link {
-    margin-top: 79px;
+    margin-top: 125px;
     padding-left: 37px;
     padding-right: 37px;
   }
@@ -165,5 +165,13 @@
     padding-top: 10px;
     padding-bottom: 100px;
     text-decoration: none;
+  }
+}
+
+@media (min-width: 1250px) {
+  .comments__controls {
+    align-self: flex-start;
+    margin-top: -156px;
+    margin-left: 650px;
   }
 }

@@ -138,7 +138,8 @@
   .page-form__checkbox-wrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 250px;
+    width: 260px;
+    padding-left: 203px;
   }
 }
 
@@ -173,6 +174,37 @@
 }
 
 @media (min-width: 768px) {
+  .page-form__fieldset--name {
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__text-wrapper {
+    padding-left: 122px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__fieldset--tel {
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__tel-mail {
+    padding-left: 122px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__fieldset--email {
+    padding-left: 50px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
   .page-form__label-checkbox {
     font-size: 19px;
     line-height: 18px;
@@ -183,6 +215,20 @@
   .page-form__fieldset--tel,
   .page-form__fieldset--email {
     background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__fieldset--additional {
+    padding-top: 31px;
+    padding-left: 50px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__additional {
+    padding-left: 122px;
   }
 }
 
@@ -199,8 +245,30 @@
 }
 
 @media (min-width: 1250px) {
+  .page-form__title {
+    padding: 0;
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 337px;
+    padding-right: 337px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-form__description {
+    padding: 0;
+    padding-left: 225px;
+    padding-right: 300px;
+    padding-top: 125px;
+    padding-bottom: 74px;
+  }
+}
+
+@media (min-width: 1250px) {
   .page-form__checkbox-wrapper {
-    width: 350px;
+    width: 370px;
   }
 }
 
@@ -211,9 +279,22 @@
 }
 
 @media (min-width: 1250px) {
+  .page-form__fieldset--name {
+    padding-top: 62px;
+  }
+}
+
+@media (min-width: 1250px) {
   .page-form__fieldset--tel,
   .page-form__fieldset--email {
     background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-form__fieldset--additional {
+    padding-left: 110px;
+    padding-right: 225px;
   }
 }
 

@@ -7,6 +7,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: auto 373px;
   }
 }
 
