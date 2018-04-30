@@ -1,13 +1,14 @@
 .product-types {
-  padding-top: 119px;
+  padding-top: 94px;
 }
 
 .product-types__interior,
 .product-types__toys {
   display: block;
-  padding-top: 28px;
-  padding-left: 28px;
-  padding-bottom: 28px;
+  padding-top: 26px;
+  padding-left: 29px;
+  padding-right: 180px;
+  padding-bottom: 29px;
   text-decoration: none;
   font-size: 19px;
   line-height: 24px;
@@ -21,4 +22,56 @@
 
 .product-types__toys {
   background-color: #56c3b2;
+}
+
+@media (min-width: 768px) {
+  .product__description {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-types {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-types__interior,
+  .product-types__toys {
+    width: 334px;
+    padding-top: 33px;
+    padding-left: 35px;
+    padding-right: 200px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .product-types {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .product-types__interior,
+  .product-types__toys {
+    width: 525px;
+    padding-right: 375px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .product__description {
+    padding-left: 315px;
+    padding-right: 315px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

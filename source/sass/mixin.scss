@@ -1,8 +1,7 @@
 @mixin button {
   display: inline-block;
-  padding-top: 15px;
-  padding-bottom: 13px;
-  font-size: 17px;
+  padding-top: 13px;
+  padding-bottom: 14px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -25,8 +24,8 @@
 
 @mixin catalog-items-heading {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 15px;
+  padding-top: 28px;
+  padding-bottom: 4px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -35,7 +34,7 @@
 
 @mixin catalog-description-heading {
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   font-size: 13px;
   line-height: 30px;
   color: $light-black;
@@ -44,8 +43,8 @@
 
 @mixin catalog-price {
   margin: 0;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 26px;
+  padding-top: 20px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
@@ -54,7 +53,7 @@
 
 @mixin catalog-form-heading {
   margin: 0;
-  padding-top: 73px;
+  padding-top: 72px;
   padding-bottom: 73px;
   font-size: 27px;
   line-height: 30px;

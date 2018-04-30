@@ -1,10 +1,44 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
 body {
-  width: 320px;
   margin: 0 auto;
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   background-color: $main-backgroundcolor;
   color: $main-color;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-container {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -20,4 +54,20 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    width: 768px;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+}
+
+@media (min-width: 1250px) {
+  .main-container {
+    width: 1250px;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
 }

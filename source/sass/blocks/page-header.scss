@@ -2,4 +2,40 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  border-top: 1px solid $border-color;
+}
+
+.page-header__logo {
+  padding-top: 21px;
+  padding-bottom: 16px;
+}
+
+.page-header__logo-link {
+  padding-left: 117px;
+}
+
+.page-header__wrapper-logo-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    border: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    padding: 0;
+    padding-right: 210px;
+    padding-top: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header__logo-link {
+    padding: 0;
+  }
 }
