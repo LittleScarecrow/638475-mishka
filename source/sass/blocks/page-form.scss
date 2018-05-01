@@ -1,8 +1,12 @@
 .page-form__title {
+  width: 260px;
   padding-left: 36px;
   padding-right: 36px;
-
   @include catalog-form-heading;
+}
+
+.page-form__wrapper {
+  background-color: #f1f1f1;
 }
 
 .page-form__description {

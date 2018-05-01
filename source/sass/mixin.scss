@@ -52,14 +52,13 @@
 }
 
 @mixin catalog-form-heading {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 72px;
   padding-bottom: 73px;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   color: $main-color;
-  background-color: #f1f1f1;
 }
 
 @mixin legend-style {
