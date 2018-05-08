@@ -1,0 +1,21 @@
+.catalog-wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .catalog-wrapper {
+    width: 665px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog-wrapper {
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

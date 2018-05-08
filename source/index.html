@@ -9,21 +9,22 @@
   <body>
     <div class="main-container">
     <header class="page-header">
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--closed">
         <div class="page-header__wrapper-logo-button">
           <a class="page-header__logo-link">
             <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Лого: Мишка">
+              <img class="page-header__logo" src="img/logo-mobile.svg" alt="Лого: Мишка">
             </picture>
           </a>
           <button class="main-nav__toogle" type="button"></button>
         </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__item-link" href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item"><a class="site-list__item-link" href="form.html">Вязание на заказ</a></li>
-          <li class="site-list__item site-list__item--hidden"><a class="site-list__item-link" href="#">Новые поступления</a></li>
-          <li class="site-list__item site-list__item--hidden"><a class="site-list__item-link" href="#">Распродажа</a></li>
+          <li class="site-list__item site-list__item--catalog"><a class="site-list__item-link" href="catalog.html">Каталог товаров</a></li>
+          <li class="site-list__item site-list__item--form"><a class="site-list__item-link" href="form.html">Вязание на заказ</a></li>
+          <li class="site-list__item site-list__item--hidden"><a class="site-list__item-link site-list__item-link--new" href="#">Новые поступления</a></li>
+          <li class="site-list__item site-list__item--hidden"><a class="site-list__item-link site-list__item-link--sale" href="#">Распродажа</a></li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item user-list__item--search">
@@ -51,7 +52,7 @@
       <section class="product">
         <header class="product__header">
           <h2 class="visually-hidden">Наш товар</h2>
-          <p class="product__description">Милые штуки ручной работы для дома</p>
+          <p class="product__description">Милые штуки ручной<br> работы для дома</p>
         </header>
         <section class="product-types">
           <h2 class="visually-hidden">Товары:</h2>
@@ -65,7 +66,7 @@
           <h2 class="product-card__title">Вязаные корзинки</h2>
           <h3 class="product-card__subtitle">Товар недели</h3>
         </div>
-        <p class="product-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <p class="product-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
         <table class="product-card__table">
           <tr>
             <td class="product-card__table-element">Цвет:</td>
@@ -80,7 +81,11 @@
             <td class="product-card__table-element">15 см</td>
           </tr>
         </table>
-        <img class="product-card__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото товара">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
+          <img class="product-card__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото товара">
+        </picture>
         <p class="product-card__price">Цена: 990 руб.</p>
         <a class="button product-card__order-button" href="#">Заказать</a>
       </article>
@@ -100,7 +105,7 @@
       <section class="comments">
         <h2 class="comments__title">Отзывы</h2>
         <blockquote class="comments__review">
-          <p class="comments__item">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="comments__item">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br> и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite class="comments__name">Анастасия Красильникова</cite>
           <a class="comments__link" href="#">@misssssiskras</a>
         </blockquote>
@@ -127,21 +132,30 @@
             <p class="contacts__address-exact">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
           </div>
           <div class="contacts__map">
-            <img class="contacts__map-address" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Наше местоположение">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__map-address" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Наше местоположение">
+            </picture>
           </div>
           <a class="button contacts__button-link" href="#">Напишите нам</a>
         </div>
       </section>
+    </div>
 
       <footer class="page-footer">
-        <img class="page-footer__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Лого: Мишка">
+        <div class="page-footer__wrapper">
+        <img class="page-footer__logo" src="img/logo-footer.svg" width="101" height="34" alt="Лого: Мишка">
         <ul class="social-list">
-          <li class="social-list__list-item social-list__list-item--instagram"><a href="#">Instagram</a></li>
-          <li class="social-list__list-item social-list__list-item--facebook"><a href="#">Facebook</a></li>
-          <li class="social-list__list-item social-list__list-item--twitter"><a href="#">Twitter</a></li>
+          <li class="social-list__list-item social-list__list-item--instagram"><a class="social-list__list-link social-list__list-link--instagram" href="#"><span class="visually-hidden">Instagram</span></a></li>
+          <li class="social-list__list-item social-list__list-item--facebook"><a class="social-list__list-link social-list__list-link--facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li class="social-list__list-item social-list__list-item--twitter"><a class="social-list__list-link social-list__list-link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
         </ul>
-        <p class="page-footer__total">Разработано</p>
-        <a class="page-footer__link-developer" href="#">HTML academy</a>
+        <div class="page-footer__feedback-wrapper">
+          <p class="page-footer__total">Разработано</p>
+          <a class="page-footer__link-developer" href="#"><span class="visually-hidden">HTML academy</span></a>
+        </div>
+      </div>
       </footer>
 
       <section class="modal-window">
@@ -164,6 +178,5 @@
         </form>
       </section>
     </main>
-    </div>
   </body>
 </html>

@@ -2,32 +2,120 @@
   background-color: #f1f1f1;
 }
 
+.page-footer__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .page-footer__total {
   margin: 0;
+  padding-left: 46px;
+  padding-top: 28px;
+  padding-bottom: 34px;
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
-  border-top: 1px solid #e5e5e5;
 }
 
 .page-footer__logo {
   display: none;
 }
 
+.page-footer__feedback-wrapper {
+  display: flex;
+  border-top: 1px solid #e5e5e5;
+}
+
+.page-footer__link-developer {
+  width: 27px;
+  height: 34px;
+  margin-left: 28px;
+  margin-top: 22px;
+  background-color: red;
+}
+
 @media (min-width: 768px) {
   .page-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 57px;
+    margin-top: 58px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer--catalog {
+    margin-top: 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer--form {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    display: flex;
+    width: 768px;
   }
 }
 
 @media (min-width: 768px) {
   .page-footer__logo {
     display: block;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 58px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer__total {
+    padding-left: 84px;
+    padding-top: 62px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer__feedback-wrapper {
+    border: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer__link-developer {
+    margin-top: 57px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer {
+    margin-top: 1px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer__wrapper {
+    width: 1150px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer__total {
+    padding-left: 275px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer--form {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer--catalog {
+    margin-top: 105px;
   }
 }

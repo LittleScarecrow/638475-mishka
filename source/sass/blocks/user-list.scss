@@ -30,7 +30,7 @@
     padding-left: 33px;
     padding-right: 33px;
     padding-top: 35px;
-    padding-bottom: 33px;
+    padding-bottom: 31px;
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
   }
@@ -38,14 +38,16 @@
 
 @media (min-width: 768px) {
   .user-list__item-link--basket {
-    padding-top: 35px;
-    padding-left: 31px;
+    padding-top: 29px;
+    padding-left: 27px;
+    padding-bottom: 29px;
   }
 }
 
 @media (min-width: 768px) {
   .user-list__item-link--basket svg {
-    padding-right: 30px;
+    padding-top: 3px;
+    padding-right: 29px;
   }
 }
 
@@ -61,8 +63,28 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .user-list {
     padding-left: 100px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .user-list__item-link--search {
+    margin-top: -38px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .user-list__item-link--basket {
+    padding-top: 0;
+    margin-top: -15px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .user-list__item-link--basket svg {
+    padding-top: 9px;
+    padding-left: 2px;
   }
 }

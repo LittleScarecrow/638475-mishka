@@ -74,8 +74,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 49px;
+    padding-right: 46px;
   }
 }
 
@@ -83,8 +83,8 @@
   .main-nav__intro {
     display: block;
     margin: 0;
-    padding-top: 43px;
-    padding-left: 132px;
+    padding-left: 133px;
+    padding-top: 13px;
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
@@ -93,8 +93,9 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .main-nav__intro {
-    padding-left: 600px;
+    padding-left: 818px;
+    margin-top: -36px;
   }
 }
