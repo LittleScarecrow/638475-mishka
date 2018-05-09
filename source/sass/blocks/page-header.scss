@@ -29,13 +29,22 @@
 @media (min-width: 768px) {
   .page-header__logo {
     padding: 0;
-    padding-right: 210px;
-    padding-top: 22px;
+    padding-right: 208px;
+    padding-top: 4px;
   }
 }
 
 @media (min-width: 768px) {
   .page-header__logo-link {
     padding: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header__logo {
+    padding-left: 77px;
+    padding-top: 0;
+    padding-right: 1px;
+    margin-top: -31px;
   }
 }
