@@ -7,8 +7,12 @@
   display: none;
 }
 
+.main-nav__toggle--nojs {
+  display: none;
+}
+
 @media (max-width: 767px) {
-  .main-nav--opened .main-nav__toogle {
+  .main-nav--opened .main-nav__toggle {
     width: 21px;
     height: 20px;
     margin-right: 31px;
@@ -20,7 +24,7 @@
 }
 
 @media (max-width: 767px) {
-  .main-nav--closed .main-nav__toogle {
+  .main-nav--closed .main-nav__toggle {
     width: 20px;
     height: 14px;
     margin-top: -5px;
@@ -64,7 +68,7 @@
 }
 
 @media (min-width: 768px) {
-  .main-nav__toogle {
+  .main-nav__toggle {
     display: none;
   }
 }
