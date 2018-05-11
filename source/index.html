@@ -23,7 +23,7 @@
               <img class="page-header__logo" src="img/logo-mobile.svg" alt="Лого: Мишка">
             </picture>
           </a>
-          <button class="main-nav__toggle main-nav__toggle--nojs" type="button"></button>
+          <button class="main-nav__toggle main-nav__toggle--js" type="button"></button>
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--catalog"><a class="site-list__item-link" href="catalog.html">Каталог товаров</a></li>
@@ -137,11 +137,7 @@
             <p class="contacts__address-exact">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
           </div>
           <div class="contacts__map">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
-              <img class="contacts__map-address" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Наше местоположение">
-            </picture>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5094485238224!2d30.32137781561846!3d59.94028176892871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e23220add%3A0xf1818779964b1f94!2z0J_QsNGA0LDQtNC90LDRjw!5e0!3m2!1sru!2sru!4v1526036578742" width="320" height="457" frameborder="0" allowfullscreen></iframe>
           </div>
           <a class="button contacts__button-link" href="#">Напишите нам</a>
         </div>
@@ -163,26 +159,31 @@
       </div>
       </footer>
 
-      <section class="modal-window">
-        <h2 class="modal-window__title">Добавить в корзину</h2>
-        <p class="modal-window__choose">Выберите размер</p>
-        <form class="modal-window__form">
-          <div class="modal-window__size">
-            <input id="S" type="radio" name="size">
-            <label for="S">S</label>
-          </div>
-          <div class="modal-window__size">
-            <input id="M" type="radio" name="size">
-            <label for="M">M</label>
-          </div>
-          <div class="modal-window__size">
-            <input id="L" type="radio" name="size">
-            <label for="L">L</label>
-          </div>
-          <button class="button modal-window__button" type="submit">Добавить</button>
-        </form>
+      <section class="modal-window modal-window--closed">
+        <div class="modal-window__overlay"></div>
+        <div class="modal-window__body">
+          <h2 class="modal-window__title">Добавить в корзину</h2>
+          <p class="modal-window__choose">Выберите размер</p>
+          <form class="modal-window__form">
+            <div class="modal-window__form-wrapper">
+              <div class="modal-window__size">
+                <input class="modal-window__input" id="S" type="radio" name="size">
+                <label class="modal-window__label" for="S">S</label>
+              </div>
+              <div class="modal-window__size">
+                <input class="modal-window__input" id="M" type="radio" name="size">
+                <label class="modal-window__label" for="M">M</label>
+              </div>
+              <div class="modal-window__size">
+                <input class="modal-window__input" id="L" type="radio" name="size">
+                <label class="modal-window__label" for="L">L</label>
+              </div>
+            </div>
+            <button class="button modal-window__button" type="submit">Добавить</button>
+          </form>
+        </div>
       </section>
     </main>
-    <script src="../js/main-nav.js"></script>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

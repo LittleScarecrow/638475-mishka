@@ -131,24 +131,29 @@
       </div>
       </footer>
 
-      <section class="modal-window">
-        <h2 class="modal-window__title">Добавить в корзину</h2>
-        <p class="modal-window__choose">Выберите размер</p>
-        <form class="modal-window__form">
-          <div class="modal-window__size">
-            <input id="S" type="radio" name="size">
-            <label for="S">S</label>
-          </div>
-          <div class="modal-window__size">
-            <input id="M" type="radio" name="size">
-            <label for="M">M</label>
-          </div>
-          <div class="modal-window__size">
-            <input id="L" type="radio" name="size">
-            <label for="L">L</label>
-          </div>
-          <button class="button modal-window__button" type="submit">Добавить</button>
-        </form>
+      <section class="modal-window modal-window--closed">
+        <div class="modal-window__overlay"></div>
+        <div class="modal-window__body">
+          <h2 class="modal-window__title">Добавить в корзину</h2>
+          <p class="modal-window__choose">Выберите размер</p>
+          <form class="modal-window__form">
+            <div class="modal-window__form-wrapper">
+              <div class="modal-window__size">
+                <input class="modal-window__input" id="S" type="radio" name="size">
+                <label class="modal-window__label" for="S">S</label>
+              </div>
+              <div class="modal-window__size">
+                <input class="modal-window__input" id="M" type="radio" name="size">
+                <label class="modal-window__label" for="M">M</label>
+              </div>
+              <div class="modal-window__size">
+                <input class="modal-window__input" id="L" type="radio" name="size">
+                <label class="modal-window__label" for="L">L</label>
+              </div>
+            </div>
+            <button class="button modal-window__button" type="submit">Добавить</button>
+          </form>
+        </div>
       </section>
     </main>
     <script src="../js/main-nav.js"></script>
