@@ -110,12 +110,6 @@
   display: block;
 }
 
-.page-form__input-radio:focus + .page-form__label-radio::before {
-  border-color: #663d15;
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
 .page-form__fieldset--kind {
   padding-bottom: 23px;
   padding-left: 27px;
@@ -177,9 +171,9 @@
   display: block;
 }
 
-.page-form__input-checkbox:focus + .page-form__label-checkbox::before {
+.page-form__input-checkbox:focus + .page-form__label-checkbox::before,
+.page-form__input-radio:focus + .page-form__label-radio::before {
   border-color: #663d15;
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
