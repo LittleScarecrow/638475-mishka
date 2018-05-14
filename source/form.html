@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <div class="main-container">
       <header class="page-header">
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--opened">
           <div class="page-header__wrapper-logo-button">
             <a href="index.html" class="page-header__logo-link">
               <picture>
@@ -17,7 +22,7 @@
                 <img class="page-header__logo" src="img/logo-mobile.svg" alt="Лого: Мишка">
               </picture>
             </a>
-            <button class="main-nav__toogle" type="button"></button>
+            <button class="main-nav__toggle main-nav__toggle--nojs" type="button"></button>
           </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--catalog"><a class="site-list__item-link" href="catalog.html">Каталог товаров</a></li>
@@ -31,7 +36,7 @@
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
                   <path fill="#d3d2d2" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
                 </svg>
-                <span class="user-list__item-link--hidden">Поиск по сайту</span>
+                <span class="user-list__item-link-hidden">Поиск по сайту</span>
               </a>
             </li>
             <li class="user-list__item user-list__item--basket">
@@ -60,11 +65,11 @@
                 <div class="page-form__legend page-form__legend--type">Тип</div>
                 <div class="page-form__radio-wrapper">
                   <div class="page-form__radio page-form__radio--interior">
-                    <input class="page-form__input-radio" id="accessories" type="radio" name="type-of-goods" value="accessory-for-internet">
+                    <input class="page-form__input-radio visually-hidden" id="accessories" type="radio" name="type-of-goods" value="accessory-for-internet" checked>
                     <label class="page-form__label-radio" for="accessories">Аксессуар для интерьера</label>
                   </div>
                   <div class="page-form__radio">
-                    <input class="page-form__input-radio" id="toy" type="radio" name="type-of-goods" value="kids-toy">
+                    <input class="page-form__input-radio visually-hidden" id="toy" type="radio" name="type-of-goods" value="kids-toy">
                     <label class="page-form__label-radio" for="toy">Детская игрушка</label>
                   </div>
                 </div>
@@ -77,27 +82,27 @@
                 <div class="page-form__legend page-form__legend--color">Цвет</div>
                 <div class="page-form__checkbox-wrapper">
                   <div class="page-form__checkbox">
-                    <input class="page-form__input-checkbox" id="white" type="checkbox" name="white" checked>
-                    <label class="page-form__label-checkbox" for="white">Белый</label>
+                    <input class="page-form__input-checkbox visually-hidden" id="white" type="checkbox" name="white" checked>
+                    <label class="page-form__label-checkbox " for="white">Белый</label>
                   </div>
                   <div class="page-form__checkbox page-form__checkbox--grey">
-                    <input class="page-form__input-checkbox" id="grey" type="checkbox" name="grey" checked>
+                    <input class="page-form__input-checkbox visually-hidden" id="grey" type="checkbox" name="grey" checked>
                     <label class="page-form__label-checkbox" for="grey">Серый</label>
                   </div>
                   <div class="page-form__checkbox">
-                    <input class="page-form__input-checkbox" id="tiffany" type="checkbox" name="tiffany">
+                    <input class="page-form__input-checkbox visually-hidden" id="tiffany" type="checkbox" name="tiffany">
                     <label class="page-form__label-checkbox" for="tiffany">«Тиффани»</label>
                   </div>
                   <div class="page-form__checkbox page-form__checkbox--black">
-                    <input class="page-form__input-checkbox" id="black" type="checkbox" name="black">
+                    <input class="page-form__input-checkbox visually-hidden" id="black" type="checkbox" name="black">
                     <label class="page-form__label-checkbox" for="black">Черный</label>
                   </div>
                   <div class="page-form__checkbox">
-                    <input class="page-form__input-checkbox" id="pink" type="checkbox" name="pink">
+                    <input class="page-form__input-checkbox visually-hidden" id="pink" type="checkbox" name="pink">
                     <label class="page-form__label-checkbox" for="pink">Розовый</label>
                   </div>
                   <div class="page-form__checkbox page-form__checkbox--orange">
-                    <input class="page-form__input-checkbox" id="orange" type="checkbox" name="orange">
+                    <input class="page-form__input-checkbox visually-hidden" id="orange" type="checkbox" name="orange">
                     <label class="page-form__label-checkbox" for="orange">Оранжевый</label>
                   </div>
                 </div>
@@ -131,7 +136,7 @@
                 <div class="page-form__legend page-form__legend--tel">Тел</div>
                 <div class="page-form__tel">
                   <label class="visually-hidden">Телефон:</label>
-                  <input class="page-form__input-tel-mail" type="tel" name="tel" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XX XX*" required>
+                  <input class="page-form__input-tel-mail" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
                 </div>
               </div>
             </fieldset>
@@ -156,7 +161,6 @@
             </div>
           </fieldset>
         </form>
-      </div>
       </section>
 
       <footer class="page-footer page-footer--form">
@@ -169,10 +173,11 @@
         </ul>
         <div class="page-footer__feedback-wrapper">
           <p class="page-footer__total">Разработано</p>
-          <a class="page-footer__link-developer" href="#"><span class="visually-hidden">HTML academy</span></a>
+          <a class="page-footer__link-developer" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML academy</span></a>
         </div>
       </div>
       </footer>
     </main>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

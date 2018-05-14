@@ -1,4 +1,5 @@
 .page-form__title {
+  position: relative;
   width: 260px;
   padding-left: 36px;
   padding-right: 36px;
@@ -102,10 +103,6 @@
   background-color: #61d1ba;
 }
 
-.page-form__input-radio {
-  display: none;
-}
-
 .page-form__input-radio + label::after {
   display: none;
 }
@@ -167,16 +164,18 @@
   background-size: 23px 23px;
 }
 
-.page-form__input-checkbox {
-  display: none;
-}
-
 .page-form__input-checkbox + label::after {
   display: none;
 }
 
 .page-form__input-checkbox:checked + label::after {
   display: block;
+}
+
+.page-form__input-checkbox:focus + .page-form__label-checkbox::before,
+.page-form__input-radio:focus + .page-form__label-radio::before {
+  border-color: #663d15;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .page-form__input-text,
@@ -374,6 +373,20 @@
 @media (min-width: 768px) {
   .page-form {
     margin-top: -42px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__title::after {
+    content: "";
+    position: absolute;
+    top: 214px;
+    left: 0;
+    width: 768px;
+    height: 34px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-size: 850px;
   }
 }
 
@@ -736,7 +749,7 @@
   .page-form__button {
     align-self: flex-start;
     margin: 0;
-    margin-top: 46px;
+    margin-top: 44px;
     padding-left: 29px;
     padding-right: 30px;
   }
@@ -745,7 +758,7 @@
 @media (min-width: 768px) {
   .page-form__recommendation {
     order: 1;
-    padding-top: 56px;
+    padding-top: 54px;
     padding-left: 137px;
     font-size: 17px;
     line-height: 30px;
@@ -761,6 +774,20 @@
     padding-right: 50px;
     padding-top: 96px;
     padding-bottom: 102px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-form__title::after {
+    content: "";
+    position: absolute;
+    top: 240px;
+    left: -280px;
+    width: 1150px;
+    height: 34px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-size: 1222px;
   }
 }
 
@@ -901,15 +928,17 @@
 
 @media (min-width: 1150px) {
   .page-form__button {
+    padding-top: 16px;
+    padding-left: 33px;
     margin-left: 113px;
-    margin-top: 43px;
+    margin-top: 42px;
   }
 }
 
 @media (min-width: 1150px) {
   .page-form__recommendation {
     padding-left: 171px;
-    padding-top: 53px;
+    padding-top: 51px;
   }
 }
 
