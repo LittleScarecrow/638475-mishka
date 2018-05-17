@@ -278,6 +278,33 @@
   background-color: #62d1bb;
 }
 
+.page-form__tel,
+.page-form__mail {
+  position: relative;
+}
+
+.page-form__icon-phone {
+  position: absolute;
+  top: 17px;
+  right: 8px;
+  fill: #cccccc;
+}
+
+.page-form__tel:hover .page-form__icon-phone {
+  fill: #62d1ba;
+}
+
+.page-form__icon-mail {
+  position: absolute;
+  top: 22px;
+  right: 4px;
+  fill: #cccccc;
+}
+
+.page-form__mail:hover .page-form__icon-mail {
+  fill: #62d1ba;
+}
+
 .page-form__input-tel-mail::placeholder {
   font-size: 17px;
   line-height: 18px;
@@ -285,7 +312,9 @@
 }
 
 .page-form__input-tel-mail {
+  box-sizing: border-box;
   margin-top: 9px;
+  padding-right: 37px;
 }
 
 .page-form__legend--mail::before {
@@ -661,14 +690,14 @@
 
 @media (min-width: 768px) {
   .page-form__tel {
-    width: 484px;
+    width: 501px;
     padding-left: 134px;
   }
 }
 
 @media (min-width: 768px) {
   .page-form__mail {
-    width: 484px;
+    width: 501px;
     padding-left: 108px;
   }
 }
@@ -677,6 +706,21 @@
   .page-form__input-tel-mail {
     background-color: #f1f1f1;
     padding-left: 18px;
+    padding-right: 56px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__icon-phone {
+    top: 18px;
+    right: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__icon-mail {
+    top: 24px;
+    right: 21px;
   }
 }
 
@@ -796,7 +840,7 @@
     padding: 0;
     padding-left: 225px;
     padding-right: 225px;
-    padding-top: 122px;
+    padding-top: 120px;
     padding-bottom: 74px;
   }
 }
@@ -899,15 +943,29 @@
 
 @media (min-width: 1150px) {
   .page-form__tel {
-    width: 682px;
+    width: 700px;
     padding-left: 82px;
   }
 }
 
 @media (min-width: 1150px) {
   .page-form__mail {
-    width: 682px;
+    width: 700px;
     padding-left: 56px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-form__icon-phone {
+    top: 20px;
+    right: 8px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-form__icon-mail {
+    top: 24px;
+    right: 3px;
   }
 }
 

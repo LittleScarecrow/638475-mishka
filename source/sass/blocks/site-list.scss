@@ -90,6 +90,7 @@
   .site-list__item-link {
     font-size: 17px;
     line-height: 24px;
+    padding-left: 2px;
   }
 }
 
@@ -98,11 +99,12 @@
   .site-list__item-link--sale {
     font-size: 15px;
     line-height: 24px;
+    padding-top: 2px;
   }
 }
 
 @media (min-width: 1150px) {
   .site-list__item-link--sale {
-    padding-right: 60px;
+    padding-right: 58px;
   }
 }

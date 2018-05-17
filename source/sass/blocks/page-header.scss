@@ -12,6 +12,15 @@
 
 .page-header__logo-link {
   padding-left: 117px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__wrapper-logo-button {
