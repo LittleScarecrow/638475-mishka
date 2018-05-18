@@ -1,5 +1,4 @@
 .page-form__title {
-  position: relative;
   width: 260px;
   padding-left: 36px;
   padding-right: 36px;
@@ -406,20 +405,6 @@
 }
 
 @media (min-width: 768px) {
-  .page-form__title::after {
-    content: "";
-    position: absolute;
-    top: 214px;
-    left: 0;
-    width: 768px;
-    height: 34px;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
-    background-size: 850px;
-  }
-}
-
-@media (min-width: 768px) {
   .page-form__title {
     width: 400px;
     padding-top: 94px;
@@ -433,12 +418,27 @@
 
 @media (min-width: 768px) {
   .page-form__description {
+    position: relative;
     font-size: 17px;
     line-height: 30px;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 72px;
     padding-bottom: 74px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__description::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 0;
+    width: 768px;
+    height: 34px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-size: 850px;
   }
 }
 
@@ -822,11 +822,10 @@
 }
 
 @media (min-width: 1150px) {
-  .page-form__title::after {
+  .page-form__description::before {
     content: "";
     position: absolute;
-    top: 240px;
-    left: -280px;
+    top: -15px;
     width: 1150px;
     height: 34px;
     background-image: url("../img/bg-zigzag-fill.svg");

@@ -30,10 +30,12 @@ overlay.addEventListener("click", function (evt) {
   popup.classList.add("modal-window--closed");
 });
 
-linkOrder.addEventListener("click", function (evt) {
+for (var i = 0; i<linkOrder.length; i++) {
+linkOrder[i].addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-window--closed");
-});
+  });
+}
 
 overlay.addEventListener("click", function (evt) {
   evt.preventDefault();
