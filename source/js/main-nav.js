@@ -16,12 +16,14 @@ navToggle.addEventListener('click', function() {
 var linkChooseSize = document.querySelector(".product-card__order-button");
 var popup = document.querySelector(".modal-window");
 var overlay = document.querySelector(".modal-window__overlay");
-var linkOrder = document.querySelector(".catalog-items__icon-cart");
+var linkOrder = document.querySelectorAll(".catalog-items__icon-cart");
 
-linkChooseSize.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-window--closed");
-});
+if (linkChooseSize) {
+  linkChooseSize.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-window--closed");
+  });
+}
 
 overlay.addEventListener("click", function (evt) {
   evt.preventDefault();
