@@ -11,7 +11,6 @@
 
 .social-list__list-link {
   display: block;
-  background-color: red;
 }
 
 .social-list__list-link--instagram {
@@ -29,6 +28,18 @@
   width: 23px;
   height: 20px;
   margin-left: 40px;
+}
+
+.social-list__icon-insta:hover,
+.social-list__icon-fb:hover,
+.social-list__icon-twitter:hover {
+  fill: #46c1ae;
+}
+
+.social-list__icon-insta:active,
+.social-list__icon-fb:active,
+.social-list__icon-twitter:active {
+  fill: #bde3dd;
 }
 
 @media (min-width: 768px) {

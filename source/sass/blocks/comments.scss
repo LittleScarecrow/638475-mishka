@@ -65,6 +65,7 @@
 
 .comments__button--back,
 .comments__button--forward {
+  position: relative;
   display: block;
   width: 130px;
   height: 50px;
@@ -73,6 +74,23 @@
 
 .comments__button--forward {
   border-left: none;
+}
+
+.comments__icon-left-arrow,
+.comments__icon-right-arrow {
+  position: absolute;
+  top: 12px;
+  left: 37px;
+}
+
+.comments__button:hover .comments__icon-left-arrow,
+.comments__button:hover .comments__icon-right-arrow {
+  fill: #666666;
+}
+
+.comments__button:active .comments__icon-left-arrow,
+.comments__button:active .comments__icon-right-arrow {
+  fill: #b2b2b2;
 }
 
 .comments__button-link {
@@ -184,6 +202,26 @@
 }
 
 @media (min-width: 768px) {
+  .comments__button {
+    border: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .comments__icon-left-arrow {
+    top: 7px;
+    left: 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .comments__icon-right-arrow {
+    top: 7px;
+    left: 21px;
+  }
+}
+
+@media (min-width: 768px) {
   .comments__controls {
     order: 3;
     padding: 0;
@@ -281,5 +319,12 @@
     align-self: flex-start;
     margin-top: -156px;
     margin-left: 783px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .comments__icon-left-arrow,
+  .comments__icon-right-arrow {
+    top: 15px;
   }
 }

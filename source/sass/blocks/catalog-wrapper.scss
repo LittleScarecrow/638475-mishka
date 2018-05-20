@@ -5,7 +5,22 @@
 
 @media (min-width: 768px) {
   .catalog-wrapper {
+    position: relative;
     width: 665px;
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -93px;
+    left: -52px;
+    width: 768px;
+    height: 34px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-size: 1036px;
   }
 }
 
@@ -17,5 +32,19 @@
     flex-wrap: wrap;
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 1150px;
+    height: 34px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-size: 1222px;
   }
 }
