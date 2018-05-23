@@ -49,24 +49,6 @@
   }
 }
 
-@media (max-width: 767px) {
-  .main-nav--opened .user-list__item {
-    display: block;
-  }
-}
-
-@media (max-width: 767px) {
-  .main-nav--opened .site-list__item {
-    display: block;
-  }
-}
-
-@media (max-width: 767px) {
-  .main-nav--opened .site-list__item--hidden {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
   .main-nav__toggle {
     display: none;
